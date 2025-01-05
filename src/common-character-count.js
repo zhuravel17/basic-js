@@ -15,7 +15,7 @@ function getCommonCharacterCount(s1, s2) {
   let str1 = s1.split("");
   let str2 = s2.split("");
   let res = 0;
-  for (item in str1) {
+  for (let item of str1) {
      let index = str2.indexOf(item);
      if ( index !== -1) {
       res += 1;
